@@ -25,11 +25,6 @@ export default defineConfig({
         start_url: "/", // OBRIGATÓRIO para o PWA saber por onde começar
         icons: [
           {
-            src: "/favicon.ico", // Adicionada a barra inicial
-            sizes: "64x64 32x32 24x24 16x16",
-            type: "image/x-icon", // Removido o purpose problemático
-          },
-          {
             src: "/android-chrome-192x192.png", // Adicionada a barra inicial
             type: "image/png",
             sizes: "192x192",
@@ -52,7 +47,7 @@ export default defineConfig({
           },
           {
             src: "/screenshot-mobile.png",
-            sizes: "390x844",
+            sizes: "390x884",
             type: "image/png",
             form_factor: "narrow", // Indica que é para ecrãs de telemóvel
             label: "Interface Mobile do App",
