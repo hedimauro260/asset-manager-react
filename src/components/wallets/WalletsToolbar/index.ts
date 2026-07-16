@@ -1,0 +1,1 @@
+export { WalletsToolbar } from "./WalletsToolbar";
