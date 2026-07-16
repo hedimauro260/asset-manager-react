@@ -21,24 +21,41 @@ export default defineConfig({
           "Personal project built to manage digital assets distributed across multiple wallets.",
         theme_color: "#111827",
         background_color: "#0b1220",
+        display: "standalone", // OBRIGATÓRIO para ativar o botão de instalar
+        start_url: "/", // OBRIGATÓRIO para o PWA saber por onde começar
         icons: [
           {
-            src: "favicon.ico",
+            src: "/favicon.ico", // Adicionada a barra inicial
             sizes: "64x64 32x32 24x24 16x16",
-            type: "image/x-icon",
-            purpose: "any maskable",
+            type: "image/x-icon", // Removido o purpose problemático
           },
           {
-            src: "android-chrome-192x192.png",
+            src: "/android-chrome-192x192.png", // Adicionada a barra inicial
             type: "image/png",
             sizes: "192x192",
-            purpose: "any maskable",
+            purpose: "any", // Mudado de "any maskable" para "any" para evitar erros se a imagem não for perfeitamente quadrada/preenchida
           },
           {
-            src: "android-chrome-512x512.png",
+            src: "/android-chrome-512x512.png", // Adicionada a barra inicial
             type: "image/png",
             sizes: "512x512",
-            purpose: "any maskable",
+            purpose: "any",
+          },
+        ],
+        screenshots: [
+          {
+            src: "/screenshot-desktop.png",
+            sizes: "1920x1080",
+            type: "image/png",
+            form_factor: "wide", // Indica que é para ecrãs de computador
+            label: "Home Screen no Computador",
+          },
+          {
+            src: "/screenshot-mobile.png",
+            sizes: "390x844",
+            type: "image/png",
+            form_factor: "narrow", // Indica que é para ecrãs de telemóvel
+            label: "Interface Mobile do App",
           },
         ],
       },
