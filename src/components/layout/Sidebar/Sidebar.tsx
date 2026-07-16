@@ -12,6 +12,7 @@ import {
 } from 'lucide-react';
 import { Card, CardBody } from '../../ui/card';
 //import { Button } from '../../ui/button/Button';
+import { InstallButton } from '../../ui/InstallButton';
 import { Switch } from '../../ui/switch/Switch';
 
 export interface SidebarProps {
@@ -140,6 +141,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
                         onChange={onThemeToggle}
                     />
                 </div>
+
+                <InstallButton />
 
                 <p className="text-xs text-text-muted font-mono">
                     version 0.10

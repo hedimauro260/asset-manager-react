@@ -3,6 +3,7 @@ export * from "./button";
 export * from "./card";
 export * from "./input";
 export * from "./badge";
+export * from "./InstallButton";
 
 // Feedback
 export * from "./spinner";
