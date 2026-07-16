@@ -1,4 +1,6 @@
 export { PortfolioCalculator } from "./portfolioCalculator";
 export { TransactionCalculator } from "./transactionCalculator";
 export type { PortfolioMetrics } from "./portfolioCalculator";
-export type { TransactionMetrics } from "./transactionCalculator";
+
+// Buscando o tipo diretamente da sua pasta central de types:
+export type { TransactionMetrics } from "../../types";
